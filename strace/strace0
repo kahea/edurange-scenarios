@@ -1,0 +1,1612 @@
+execve("***", [***], [/* ** vars */]) = 0
+brk(0)                                  = 0x812000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa859417000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=104321, ...}) = 0
+mmap(NULL, 104321, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa8593fd000
+close(3)                                = 0
+open("/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260(\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=31600, ...}) = 0
+mmap(NULL, 2128920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa858fef000
+mprotect(0x7fa858ff6000, 2093056, PROT_NONE) = 0
+mmap(0x7fa8591f5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fa8591f5000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220i\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1005768, ...}) = 0
+mmap(NULL, 3100968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa858cf9000
+mprotect(0x7fa858dee000, 2093056, PROT_NONE) = 0
+mmap(0x7fa858fed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf4000) = 0x7fa858fed000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0M\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1728760, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa8593fc000
+mmap(NULL, 3841080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa85894f000
+mprotect(0x7fa858aef000, 2097152, PROT_NONE) = 0
+mmap(0x7fa858cef000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a0000) = 0x7fa858cef000
+mmap(0x7fa858cf5000, 15416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa858cf5000
+close(3)                                = 0
+open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20}\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=134916, ...}) = 0
+mmap(NULL, 2212816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa858732000
+mprotect(0x7fa85874a000, 2093056, PROT_NONE) = 0
+mmap(0x7fa858949000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fa858949000
+mmap(0x7fa85894b000, 13264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa85894b000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa8593fb000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa8593fa000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa8593f9000
+arch_prctl(ARCH_SET_FS, 0x7fa8593fa700) = 0
+mprotect(0x7fa858cef000, 16384, PROT_READ) = 0
+mprotect(0x7fa858949000, 4096, PROT_READ) = 0
+mprotect(0x7fa858fed000, 4096, PROT_READ) = 0
+mprotect(0x7fa8591f5000, 4096, PROT_READ) = 0
+mprotect(0x636000, 4096, PROT_READ)     = 0
+mprotect(0x7fa859418000, 4096, PROT_READ) = 0
+munmap(0x7fa8593fd000, 104321)          = 0
+set_tid_address(0x7fa8593fa9d0)         = 4855
+set_robust_list(0x7fa8593fa9e0, 24)     = 0
+futex(0x7fff5f44c798, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7fff5f44c798, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7fa8593fa700) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigaction(SIGRTMIN, {0x7fa8587397a0, [], SA_RESTORER|SA_SIGINFO, 0x7fa858742b10}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7fa858739820, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fa858742b10}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+uname({sys="Linux", node="localhost", ...}) = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+brk(0)                                  = 0x812000
+brk(0x833000)                           = 0x833000
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+open(".", O_RDONLY)                     = 3
+fchdir(3)                               = 0
+newfstatat(AT_FDCWD, "/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+open(".", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 4
+fchdir(4)                               = 0
+openat(AT_FDCWD, "/etc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fcntl(5, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fchdir(5)                               = 0
+getdents(5, /* 140 entries */, 32768)   = 4464
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sane.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sane.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 75 entries */, 32768)    = 2544
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "dll.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "dll.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "pam.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 31 entries */, 32768)    = 984
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "modprobe.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "modprobe.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "nullmailer", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "nullmailer", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "portage", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "portage", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 16 entries */, 32768)    = 552
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "bin", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "bin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "savedconfig", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "savedconfig", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "x11-wm", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "x11-wm", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sys-kernel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sys-kernel", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 96
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "x11-terms", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "x11-terms", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sys-apps", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sys-apps", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "postsync.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "postsync.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "repos.conf", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "repos.conf", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 96
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "emacs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "emacs", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 152
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "logrotate.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "logrotate.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 7 entries */, 32768)     = 216
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "hotplug", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "hotplug", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 72
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "usb", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "usb", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "xml", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "xml", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 7 entries */, 32768)     = 256
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "runlevels", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "runlevels", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 168
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "boot", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "boot", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 21 entries */, 32768)    = 632
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "shutdown", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "shutdown", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "default", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "default", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 11 entries */, 32768)    = 336
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sysinit", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sysinit", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 8 entries */, 32768)     = 232
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "pango", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "pango", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "x86_64-pc-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "x86_64-pc-linux-gnu", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 136
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "i3", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "i3", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 120
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sandbox.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sandbox.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "wpa_supplicant", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "wpa_supplicant", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 120
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "dbus-1", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "dbus-1", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "session.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "session.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 96
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "system.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "system.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 168
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sysctl.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sysctl.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "X11", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "X11", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "xinit", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "xinit", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "xinitrc.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "xinitrc.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "Sessions", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "Sessions", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "wireless-regdb", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "wireless-regdb", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "pubkeys", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "pubkeys", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 136
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "kernel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "kernel", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "postrm.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "postrm.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "postinst.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "postinst.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "java-config-2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "java-config-2", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 152
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "build", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "build", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 120
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "security", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "security", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 12 entries */, 32768)    = 392
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "limits.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "limits.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "namespace.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "namespace.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "libnl", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "libnl", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "texmf", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "texmf", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 15 entries */, 32768)    = 464
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fmtutil.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "fmtutil.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "xdvi", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "xdvi", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "dvipdfm", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "dvipdfm", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "config", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "config", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "language.dat.lua.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "language.dat.lua.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 104
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "texmf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "texmf.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 7 entries */, 32768)     = 232
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "web2c", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "web2c", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 200
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "language.dat.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "language.dat.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 104
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "dvips.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "dvips.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "language.def.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "language.def.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 104
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "updmap.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "updmap.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 8 entries */, 32768)     = 304
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "web2c.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "web2c.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "tex", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "tex", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "latex", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "latex", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 14 entries */, 32768)    = 440
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "listings.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "listings.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "base.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "base.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fontspec.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "fontspec.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "pst-pdgr.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "pst-pdgr.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sasnrdisplay.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sasnrdisplay.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "hyperref.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "hyperref.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "microtype.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "microtype.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 19 entries */, 32768)    = 608
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sciposter.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sciposter.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 10 entries */, 32768)    = 312
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "subfig.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "subfig.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "chemmacros.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "chemmacros.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 96
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "unitsdef.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "unitsdef.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 11 entries */, 32768)    = 336
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "SIunits.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "SIunits.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "generic", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "generic", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "babel.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "babel.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "luatex", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "luatex", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "hyph-utf8.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "hyph-utf8.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ssh", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ssh", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 13 entries */, 32768)    = 464
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "systemd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "systemd", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "network", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "network", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "system", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "system", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ntpdate.service.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ntpdate.service.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sntp.service.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sntp.service.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "php", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "php", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "cli-php5.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "cli-php5.5", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 136
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ext-active", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ext-active", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ext", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ext", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fpm-php5.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "fpm-php5.5", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 168
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ext-active", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ext-active", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ext", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ext", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "eclean", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "eclean", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "nginx", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "nginx", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 9 entries */, 32768)     = 288
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ImageMagick-6", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ImageMagick-6", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 15 entries */, 32768)    = 520
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "initramfs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "initramfs", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "post-update.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "post-update.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "local.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "local.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ssl", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ssl", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 7 entries */, 32768)     = 200
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "nginx", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "nginx", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "certs", {st_mode=S_IFDIR|0755, st_size=20480, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "certs", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 332 entries */, 32768)   = 14648
+brk(0x854000)                           = 0x854000
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+brk(0x846000)                           = 0x846000
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "private", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "private", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = -1 EACCES (Permission denied)
+write(2, "find: ", 6)                   = 6
+write(2, "`/etc/ssl/private'", 18)      = 18
+write(2, ": Permission denied", 19)     = 19
+write(2, "\n", 1)                       = 1
+newfstatat(AT_FDCWD, "misc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "misc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 9 entries */, 32768)     = 272
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "hp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "hp", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "conf.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 45 entries */, 32768)    = 1408
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "at-spi2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "at-spi2", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 88
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "mplayer", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "mplayer", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "skel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "skel", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, ".ssh", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".ssh", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = -1 EACCES (Permission denied)
+write(2, "find: ", 6)                   = 6
+write(2, "`/etc/skel/.ssh'", 16)        = 16
+write(2, ": Permission denied", 19)     = 19
+write(2, "\n", 1)                       = 1
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "gtk-3.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "gtk-3.0", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 120
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "t1lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "t1lib", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "terminfo", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 9 entries */, 32768)     = 216
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 72
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "v", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "v", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 7 entries */, 32768)     = 200
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "s", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "s", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 104
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "x", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "x", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 152
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "r", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "r", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 104
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "a", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "a", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 72
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "l", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "l", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "bash", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "bash", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "default", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "default", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "rc_keymaps", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "rc_keymaps", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 119 entries */, 32768)   = 4216
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "udev", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "udev", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "rules.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "rules.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "hwdb.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "hwdb.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ca-certificates", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ca-certificates", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "update.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "update.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "pm", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "pm", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "config.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "config.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "power.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "power.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sleep.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sleep.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "xinetd.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "xinetd.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 16 entries */, 32768)    = 552
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "cups", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "cups", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 14 entries */, 32768)    = 456
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "interfaces", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "interfaces", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 96
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ppd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ppd", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 192
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ssl", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ssl", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = -1 EACCES (Permission denied)
+write(2, "find: ", 6)                   = 6
+write(2, "`/etc/cups/ssl'", 15)         = 15
+write(2, ": Permission denied", 19)     = 19
+write(2, "\n", 1)                       = 1
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "sgml", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "sgml", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 8 entries */, 32768)     = 272
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fonts", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "fonts", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "conf.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 18 entries */, 32768)    = 704
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "conf.avail", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "conf.avail", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 39 entries */, 32768)    = 1672
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "xdg", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "xdg", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 80
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "autostart", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "autostart", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 3 entries */, 32768)     = 96
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "profile.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "profile.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 7 entries */, 32768)     = 256
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "cron.daily", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "cron.daily", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 112
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "gtk-2.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "gtk-2.0", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 128
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "x86_64-pc-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "x86_64-pc-linux-gnu", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 2 entries */, 32768)     = 48
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "init.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "init.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 73 entries */, 32768)    = 2280
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "mysql", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "mysql", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 120
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "ld.so.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "ld.so.conf.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "env.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "env.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 26 entries */, 32768)    = 880
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "gcc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 5 entries */, 32768)     = 176
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "python", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "python", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 136
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "binutils", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "binutils", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 4 entries */, 32768)     = 144
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "revdep-rebuild", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "revdep-rebuild", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 5
+fchdir(5)                               = 0
+getdents(5, /* 6 entries */, 32768)     = 200
+getdents(5, /* 0 entries */, 32768)     = 0
+close(5)                                = 0
+open("..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_DIRECTORY|O_NOFOLLOW) = 5
+fstat(5, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fchdir(5)                               = 0
+close(5)                                = 0
+brk(0x834000)                           = 0x834000
+fchdir(4)                               = 0
+fchdir(4)                               = 0
+close(4)                                = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++

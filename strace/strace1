@@ -1,0 +1,33 @@
+execve("***", [***], [/* ** vars */]) = 0
+brk(0)                                  = 0x21f7000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f937f9f3000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=102947, ...}) = 0
+mmap(NULL, 102947, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f937f9d9000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0M\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1728760, ...}) = 0
+mmap(NULL, 3841080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f937f429000
+mprotect(0x7f937f5c9000, 2097152, PROT_NONE) = 0
+mmap(0x7f937f7c9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a0000) = 0x7f937f7c9000
+mmap(0x7f937f7cf000, 15416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f937f7cf000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f937f9d8000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f937f9d7000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f937f9d6000
+arch_prctl(ARCH_SET_FS, 0x7f937f9d7700) = 0
+mprotect(0x7f937f7c9000, 16384, PROT_READ) = 0
+mprotect(0x60c000, 4096, PROT_READ)     = 0
+mprotect(0x7f937f9f4000, 4096, PROT_READ) = 0
+munmap(0x7f937f9d9000, 102947)          = 0
+brk(0)                                  = 0x21f7000
+brk(0x2218000)                          = 0x2218000
+umask(0)                                = 022
+stat("file", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+fchmodat(AT_FDCWD, "file", 0744)        = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
