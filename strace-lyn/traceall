@@ -1,0 +1,2 @@
+#!/bin/bash
+for f in `find -not -name "*.c" -not -name "makeall" -not -name "*.strace" -not -name "traceall" -not -name "clean"`; do strace ./$f 2> $f.strace; done

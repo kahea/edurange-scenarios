@@ -1,0 +1,2 @@
+#!/bin/bash
+for f in `find -not -name "*.c" -not -name "makeall" -not -name "traceall" -not -name "clean" -not -name "."`; do rm $f; done

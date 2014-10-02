@@ -1,0 +1,5 @@
+execve("./.", ["./."], [/* 45 vars */]) = -1 EACCES (Permission denied)
+write(2, "strace: exec: Permission denied\n", 32strace: exec: Permission denied
+) = 32
+exit_group(1)                           = ?
++++ exited with 1 +++
