@@ -1,32 +1,32 @@
 execve("././program3", ["././program3"], [/* 45 vars */]) = 0
-brk(0)                                  = 0x1f37000
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f010bebe000
+brk(0)                                  = 0x18ff000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97c15a5000
 access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=109299, ...}) = 0
-mmap(NULL, 109299, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f010bea3000
+mmap(NULL, 109299, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f97c158a000
 close(3)                                = 0
 open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\33\2\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_mode=S_IFREG|0755, st_size=1701064, ...}) = 0
-mmap(NULL, 3808344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f010b8fd000
-mprotect(0x7f010ba96000, 2093056, PROT_NONE) = 0
-mmap(0x7f010bc95000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x198000) = 0x7f010bc95000
-mmap(0x7f010bc9b000, 15448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f010bc9b000
+mmap(NULL, 3808344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97c0fe4000
+mprotect(0x7f97c117d000, 2093056, PROT_NONE) = 0
+mmap(0x7f97c137c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x198000) = 0x7f97c137c000
+mmap(0x7f97c1382000, 15448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f97c1382000
 close(3)                                = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f010bea2000
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f010bea1000
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f010bea0000
-arch_prctl(ARCH_SET_FS, 0x7f010bea1700) = 0
-mprotect(0x7f010bc95000, 16384, PROT_READ) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97c1589000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97c1588000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97c1587000
+arch_prctl(ARCH_SET_FS, 0x7f97c1588700) = 0
+mprotect(0x7f97c137c000, 16384, PROT_READ) = 0
 mprotect(0x600000, 4096, PROT_READ)     = 0
-mprotect(0x7f010bebf000, 4096, PROT_READ) = 0
-munmap(0x7f010bea3000, 109299)          = 0
-brk(0)                                  = 0x1f37000
-brk(0x1f58000)                          = 0x1f58000
+mprotect(0x7f97c15a6000, 4096, PROT_READ) = 0
+munmap(0x7f97c158a000, 109299)          = 0
+brk(0)                                  = 0x18ff000
+brk(0x1920000)                          = 0x1920000
 open("/tmp/foo", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f010bebd000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97c15a4000
 write(3, "foo\0", 4)                    = 4
 exit_group(1)                           = ?
 +++ exited with 1 +++

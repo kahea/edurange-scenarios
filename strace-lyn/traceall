@@ -1,2 +1,3 @@
 #!/bin/bash
-for f in `find -not -name "*.c" -not -name "makeall" -not -name "*.strace" -not -name "traceall" -not -name "clean"`; do strace ./$f 2> $f.strace; done
+#for f in `find -not -name "*.c" -not -name "makeall" -not -name "*.strace" -not -name "traceall" -not -name "clean"`; do strace ./$f 2> $f.strace; done
+for f in `find -not -name "*.c" -not -name "makeall" -not -name "*.strace" -not -name "traceall" -not -name "rmbins" -not -name "rmstraces" -not -name "."`; do strace ./$f 2> $f.strace; done
